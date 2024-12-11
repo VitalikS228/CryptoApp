@@ -1,6 +1,5 @@
 package com.example.cryptoapp.api
 
-
 import com.google.gson.annotations.SerializedName
 
 data class CryptoResponse(
@@ -11,31 +10,22 @@ data class CryptoResponse(
 data class CryptoData(
     @SerializedName("CoinInfo")
     val coinInfo: CoinInfo,
-
     @SerializedName("DISPLAY")
-    val display: DisplayData
+    val display: Map<String, CurrencyData> // Динамічна структура для валют
 )
 
 data class CoinInfo(
     @SerializedName("Id")
     val id: String,
-
-    @SerializedName("Name")
-    val name: String,
-
     @SerializedName("FullName")
     val fullName: String,
-
+    @SerializedName("Name")
+    val name: String,
     @SerializedName("ImageUrl")
     val imageUrl: String
 )
 
-data class DisplayData(
-    @SerializedName("USD")
-    val usd: USDData
-)
-
-data class USDData(
+data class CurrencyData(
     @SerializedName("PRICE")
     val price: String
 )
