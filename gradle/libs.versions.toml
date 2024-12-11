@@ -8,7 +8,7 @@ espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.6.1"
 activityCompose = "1.8.0"
 composeBom = "2024.04.01"
-room = "2.5.2"
+appcompat = "1.6.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +32,9 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version = "2.
 room-ktx = { group = "androidx.room", name = "room-ktx", version = "2.5.0" }
 picasso = { group = "com.squareup.picasso", name = "picasso", version = "2.8" }
 work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version = "2.8.1" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+
 
 
 [plugins]

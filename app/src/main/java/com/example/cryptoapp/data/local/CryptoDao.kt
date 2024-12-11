@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface CryptoDao {
+
     @Query("SELECT * FROM cryptocurrencies")
     fun getAllCryptocurrencies(): Flow<List<CryptoEntity>>
 

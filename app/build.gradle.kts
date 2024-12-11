@@ -9,6 +9,10 @@ android {
     namespace = "com.example.cryptoapp"
     compileSdk = 34
 
+    kapt {
+        correctErrorTypes = true
+    }
+
     defaultConfig {
         applicationId = "com.example.cryptoapp"
         minSdk = 21
@@ -41,6 +45,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.appcompat)
     implementation(libs.retrofit)
     implementation(libs.gson.converter)
     implementation(libs.room.runtime)

@@ -3,7 +3,6 @@ package com.example.cryptoapp.repository
 import com.example.cryptoapp.api.ApiService
 import com.example.cryptoapp.data.local.CryptoDao
 import com.example.cryptoapp.data.local.CryptoEntity
-import com.example.cryptoapp.api.CryptoResponse
 import kotlinx.coroutines.flow.Flow
 
 class CryptoRepository(
