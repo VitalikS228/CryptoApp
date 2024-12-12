@@ -13,5 +13,5 @@ interface CryptoDao {
     fun getAllCryptocurrencies(): Flow<List<CryptoEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertCryptocurrencies(cryptos: List<CryptoEntity>)
+    suspend fun insertCryptocurrencies(cryptos: List<CryptoEntity>): Unit
 }

@@ -2,16 +2,11 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("kotlin-kapt")
 }
 
 android {
     namespace = "com.example.cryptoapp"
     compileSdk = 34
-
-    kapt {
-        correctErrorTypes = true
-    }
 
     defaultConfig {
         applicationId = "com.example.cryptoapp"
@@ -49,7 +44,6 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.gson.converter)
     implementation(libs.room.runtime)
-    kapt(libs.room.compiler)
     implementation(libs.room.ktx)
     implementation(libs.picasso)
     implementation(libs.work.runtime.ktx)
